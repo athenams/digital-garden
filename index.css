@@ -1,0 +1,106 @@
+/*————————— Root Styles —————————*/
+:root {
+  
+  --text: sans-serif;
+
+  --font-normal: 18px;
+  --font-small: 16px;
+  --font-smaller: 14px;
+
+  --normal-weight: 400;  /* Switch to 300 if you want thinner default text */
+  --bold-weight: 600;    /* Switch to 600 or 700 if you want thicker bold text */
+  
+  --background-accent: #d0caca;
+}
+
+/*------------------- COLORS --------------------- */
+/*------------------- font*/
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: var(--bold-weight);
+}
+H1 {
+	font-size: 3.5em;
+	font-family: serif;
+	font-style: "Book";
+}
+H2 {
+	font-size: 1.5em;
+	font-family: sans-serif;
+}
+H3 {
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+nav, .footer-text{
+  font-size: var(--font-smaller);
+}
+body {
+  font-size: var(--font-normal);
+  font-family:  var(--text);
+}
+
+/*------------------- BASIC LAYOUT -------------------*/
+/*------------------- Header + Footer */
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+Footer {
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-grow: 1;
+}
+.header-nav-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-grow: 1;
+}
+.header-nav-list-item {
+	display: block;
+	flex: 0 1 80px;
+}
+
+.header-search {
+	display:  flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+/*------------------- Body */
+#etc {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#other, #upcoming, #past {
+	flex: 0 1 30%;
+	justify-content: flex-start;
+}
+
+.portfolio-head {
+	text-decoration: underline;
+}
+
+#Newsletter {
+	display: flex;
+	flex-direction:  column;
+}
